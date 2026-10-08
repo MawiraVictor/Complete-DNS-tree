@@ -1,0 +1,51 @@
+// ===== Root zone =====
+zone "." {
+    type master;
+    file "/etc/bind/db.root";
+    allow-transfer { 10.26.216.144; };
+    also-notify { 10.26.216.144; };
+    notify yes;
+};
+
+// ===== TLD zone =====
+zone "cns" {
+    type master;
+    file "/etc/bind/db.cns";
+    allow-transfer { 10.26.216.144; };
+    also-notify { 10.26.216.144; };
+    notify yes;
+};
+
+// ===== Second-level zone: ozy.cns =====
+zone "ozy.cns" {
+    type master;
+    file "/etc/bind/db.ozy.cns";
+    allow-transfer { 10.26.216.144; };
+    also-notify { 10.26.216.144; };
+    notify yes;
+};
+
+// ===== Third-level zone: eng.ozy.cns =====
+zone "eng.ozy.cns" {
+    type master;
+    file "/etc/bind/db.eng.ozy.cns";
+    allow-transfer { 10.26.216.144; };
+    also-notify { 10.26.216.144; };
+    notify yes;
+};
+
+// ===== Reverse zone =====
+zone "216.26.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.10.26.216";
+    allow-transfer { 10.26.216.144; };
+    also-notify { 10.26.216.144; };
+    notify yes;
+};
+
+// ===== Slave of vic.cns (from Clone) =====
+zone "vic.cns" {
+    type slave;
+    file "/var/cache/bind/db.vic.cns";
+    masters { 10.26.216.144; };
+};

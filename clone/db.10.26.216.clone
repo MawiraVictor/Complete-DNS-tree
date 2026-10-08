@@ -1,0 +1,16 @@
+$TTL 604800
+@       IN      SOA     vic.cns. root.vic.cns. (
+                        2026100801 ; Serial
+                        604800     ; Refresh
+                        86400      ; Retry
+                        2419200    ; Expire
+                        604800 )   ; Negative Cache TTL
+;
+@       IN      NS      ns1.vic.cns.
+@       IN      NS      ns2.vic.cns.
+
+144     IN      PTR     mail.vic.cns.
+144     IN      PTR     vic.cns.
+236     IN      PTR     mail.ozy.cns.
+236     IN      PTR     ozy.cns.
+150     IN      PTR     sqlslv2.vic.cns.

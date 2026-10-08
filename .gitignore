@@ -1,0 +1,23 @@
+# Secrets and keys — NEVER commit
+rndc.key
+K*.key
+K*.private
+*.jnl
+*.signed
+*.signed.jnl
+bind.keys
+*passwd*
+*secret*
+
+# Runtime cache
+__pycache__/
+*.pyc
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local automation — never commit
+scripts/
+*.sh.local

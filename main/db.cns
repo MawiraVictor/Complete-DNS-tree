@@ -1,0 +1,27 @@
+$TTL 604800
+cns.            IN      SOA     ns1.cns. admin.cns. (
+                                2026092701 ; Serial
+                                604800     ; Refresh
+                                86400      ; Retry
+                                2419200    ; Expire
+                                604800 )   ; Negative Cache TTL
+;
+cns.            IN      NS      ns1.cns.
+cns.            IN      NS      ns2.cns.
+
+; ---- delegations to second-level zones ----
+ozy.cns.        IN      NS      ns1.ozy.cns.
+ozy.cns.        IN      NS      ns2.ozy.cns.
+
+vic.cns.        IN      NS      ns1.vic.cns.
+vic.cns.        IN      NS      ns2.vic.cns.
+
+; ---- glue records for nameserver hostnames ----
+ns1.cns.        IN      A       10.26.216.236
+ns2.cns.        IN      A       10.26.216.144
+
+ns1.ozy.cns.    IN      A       10.26.216.236
+ns2.ozy.cns.    IN      A       10.26.216.144
+
+ns1.vic.cns.    IN      A       10.26.216.144
+ns2.vic.cns.    IN      A       10.26.216.236

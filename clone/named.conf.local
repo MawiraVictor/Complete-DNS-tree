@@ -1,0 +1,42 @@
+// ===== Second-level zone: vic.cns (master on Clone) =====
+zone "vic.cns" {
+    type master;
+    file "/etc/bind/db.vic.cns";
+    allow-transfer { 10.26.216.236; };
+    also-notify { 10.26.216.236; };
+    notify yes;
+};
+
+// ===== Reverse zone (master on Clone) =====
+zone "216.26.10.in-addr.arpa" {
+    type master;
+    file "/etc/bind/db.10.26.216";
+    allow-transfer { 10.26.216.236; };
+    also-notify { 10.26.216.236; };
+    notify yes;
+};
+
+// ===== Slaves of Main's zones =====
+zone "." {
+    type slave;
+    file "/var/cache/bind/db.root";
+    masters { 10.26.216.236; };
+};
+
+zone "cns" {
+    type slave;
+    file "/var/cache/bind/db.cns";
+    masters { 10.26.216.236; };
+};
+
+zone "ozy.cns" {
+    type slave;
+    file "/var/cache/bind/db.ozy.cns";
+    masters { 10.26.216.236; };
+};
+
+zone "eng.ozy.cns" {
+    type slave;
+    file "/var/cache/bind/db.eng.ozy.cns";
+    masters { 10.26.216.236; };
+};
