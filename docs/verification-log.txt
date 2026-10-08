@@ -1,5 +1,5 @@
 === DNS Verification Log ===
-Generated: 2026-10-08T08:47:39-04:00
+Generated: 2026-10-08T09:20:57-04:00
 
 ### Zone validation
 zone ozy.cns/IN: loaded serial 2026100501
@@ -21,8 +21,8 @@ ns2.ozy.cns.
 ns2.eng.ozy.cns.
 ns1.eng.ozy.cns.
 --- vic.cns NS
-ns1.vic.cns.
 ns2.vic.cns.
+ns1.vic.cns.
 --- sqlmst.ozy.cns
 10.26.216.236
 --- sqlslv1.vic.cns
@@ -35,6 +35,6 @@ ns2.vic.cns.
 ### Reverse lookups
 ozy.cns.
 mail.ozy.cns.
-vic.cns.
 mail.vic.cns.
+vic.cns.
 sqlslv2.vic.cns.
