@@ -8,24 +8,24 @@ $TTL 604800
 ;
 @       IN      NS      ns1.ozy.cns.
 @       IN      NS      ns2.ozy.cns.
-@       IN      A       10.26.216.236
+@       IN      A       192.168.100.28
 @       IN      MX  10  mail.ozy.cns.
 
 ; ---- nameservers ----
-ns1     IN      A       10.26.216.236
-ns2     IN      A       10.26.216.144
+ns1     IN      A       192.168.100.28
+ns2     IN      A       192.168.100.29
 
 ; ---- delegation to eng.ozy.cns ----
 eng.ozy.cns.         IN      NS      ns1.eng.ozy.cns.
 eng.ozy.cns.         IN      NS      ns2.eng.ozy.cns.
-ns1.eng.ozy.cns.     IN      A       10.26.216.236
-ns2.eng.ozy.cns.     IN      A       10.26.216.144
+ns1.eng.ozy.cns.     IN      A       192.168.100.28
+ns2.eng.ozy.cns.     IN      A       192.168.100.29
 
 ; ---- hosts in ozy.cns ----
-mail    IN      A       10.26.216.236
-nfs     IN      A       10.26.216.236
-smb     IN      A       10.26.216.236
-ldap    IN      A       10.26.216.236
-www     IN      A       10.26.216.236
-stu     IN      A       10.26.216.236
-sqlmst  IN      A       10.26.216.236
+mail    IN      A       192.168.100.28
+nfs     IN      A       192.168.100.28
+smb     IN      A       192.168.100.28
+ldap    IN      A       192.168.100.28
+www     IN      A       192.168.100.28
+stu     IN      A       192.168.100.28
+sqlmst  IN      A       192.168.100.28

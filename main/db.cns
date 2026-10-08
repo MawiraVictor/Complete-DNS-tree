@@ -17,11 +17,11 @@ vic.cns.        IN      NS      ns1.vic.cns.
 vic.cns.        IN      NS      ns2.vic.cns.
 
 ; ---- glue records for nameserver hostnames ----
-ns1.cns.        IN      A       10.26.216.236
-ns2.cns.        IN      A       10.26.216.144
+ns1.cns.        IN      A       192.168.100.28
+ns2.cns.        IN      A       192.168.100.29
 
-ns1.ozy.cns.    IN      A       10.26.216.236
-ns2.ozy.cns.    IN      A       10.26.216.144
+ns1.ozy.cns.    IN      A       192.168.100.28
+ns2.ozy.cns.    IN      A       192.168.100.29
 
-ns1.vic.cns.    IN      A       10.26.216.144
-ns2.vic.cns.    IN      A       10.26.216.236
+ns1.vic.cns.    IN      A       192.168.100.29
+ns2.vic.cns.    IN      A       192.168.100.28

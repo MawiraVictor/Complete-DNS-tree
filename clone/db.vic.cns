@@ -1,6 +1,6 @@
 $TTL 604800
 @       IN      SOA     ns1.vic.cns. admin.vic.cns. (
-                        2026100501 ; Serial
+                        2026100801 ; Serial
                         604800     ; Refresh
                         86400      ; Retry
                         2419200    ; Expire
@@ -8,18 +8,14 @@ $TTL 604800
 ;
 @       IN      NS      ns1.vic.cns.
 @       IN      NS      ns2.vic.cns.
-@       IN      A       10.26.216.144
+@       IN      A       192.168.100.29
 @       IN      MX  10  mail.vic.cns.
 
-; ---- nameservers ----
-ns1     IN      A       10.26.216.144
-ns2     IN      A       10.26.216.236
-
-; ---- hosts in vic.cns ----
-mail     IN     A       10.26.216.144
-nfs      IN     A       10.26.216.144
-smb      IN     A       10.26.216.144
-ldap     IN     A       10.26.216.144
-www      IN     A       10.26.216.144
-sqlslv1  IN     A       10.26.216.144
-sqlslv2  IN     A       10.26.216.150
+ns1     IN      A       192.168.100.29
+ns2     IN      A       192.168.100.28
+mail    IN      A       192.168.100.29
+nfs     IN      A       192.168.100.29
+smb     IN      A       192.168.100.29
+ldap    IN      A       192.168.100.29
+www     IN      A       192.168.100.29
+sqlslv1 IN      A       192.168.100.29

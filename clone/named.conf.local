@@ -2,17 +2,17 @@
 zone "vic.cns" {
     type master;
     file "/etc/bind/db.vic.cns";
-    allow-transfer { 10.26.216.236; };
-    also-notify { 10.26.216.236; };
+    allow-transfer { 192.168.100.28; };
+    also-notify { 192.168.100.28; };
     notify yes;
 };
 
 // ===== Reverse zone (master on Clone) =====
-zone "216.26.10.in-addr.arpa" {
+zone "100.168.192.in-addr.arpa" {
     type master;
-    file "/etc/bind/db.10.26.216";
-    allow-transfer { 10.26.216.236; };
-    also-notify { 10.26.216.236; };
+    file "/etc/bind/db.192.168.100";
+    allow-transfer { 192.168.100.28; };
+    also-notify { 192.168.100.28; };
     notify yes;
 };
 
@@ -20,23 +20,23 @@ zone "216.26.10.in-addr.arpa" {
 zone "." {
     type slave;
     file "/var/cache/bind/db.root";
-    masters { 10.26.216.236; };
+    masters { 192.168.100.28; };
 };
 
 zone "cns" {
     type slave;
     file "/var/cache/bind/db.cns";
-    masters { 10.26.216.236; };
+    masters { 192.168.100.28; };
 };
 
 zone "ozy.cns" {
     type slave;
     file "/var/cache/bind/db.ozy.cns";
-    masters { 10.26.216.236; };
+    masters { 192.168.100.28; };
 };
 
 zone "eng.ozy.cns" {
     type slave;
     file "/var/cache/bind/db.eng.ozy.cns";
-    masters { 10.26.216.236; };
+    masters { 192.168.100.28; };
 };

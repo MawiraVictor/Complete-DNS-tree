@@ -8,13 +8,13 @@ eng.ozy.cns.    IN      SOA     ns1.eng.ozy.cns. admin.eng.ozy.cns. (
 ;
 eng.ozy.cns.    IN      NS      ns1.eng.ozy.cns.
 eng.ozy.cns.    IN      NS      ns2.eng.ozy.cns.
-eng.ozy.cns.    IN      A       10.26.216.236
+eng.ozy.cns.    IN      A       192.168.100.28
 eng.ozy.cns.    IN      MX  10  mail.eng.ozy.cns.
 
-ns1             IN      A       10.26.216.236
-ns2             IN      A       10.26.216.144
-mail            IN      A       10.26.216.236
-nfs             IN      A       10.26.216.236
-smb             IN      A       10.26.216.236
-ldap            IN      A       10.26.216.236
-www             IN      A       10.26.216.236
+ns1             IN      A       192.168.100.28
+ns2             IN      A       192.168.100.29
+mail            IN      A       192.168.100.28
+nfs             IN      A       192.168.100.28
+smb             IN      A       192.168.100.28
+ldap            IN      A       192.168.100.28
+www             IN      A       192.168.100.28
