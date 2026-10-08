@@ -12,3 +12,6 @@
 - Gateway: 10.26.216.255
 - Nameservers: 10.26.216.236, 10.26.216.144
 - Reverse zone: 216.26.10.in-addr.arpa
+
+## Notes
+- Initial subnet range: 10.26.216.0/24

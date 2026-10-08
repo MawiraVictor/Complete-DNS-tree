@@ -1,0 +1,40 @@
+=== DNS Verification Log ===
+Generated: 2026-10-08T08:47:39-04:00
+
+### Zone validation
+zone ozy.cns/IN: loaded serial 2026100501
+OK
+zone eng.ozy.cns/IN: loaded serial 2026092701
+OK
+zone cns/IN: loaded serial 2026092701
+OK
+zone ./IN: loaded serial 2026092701
+OK
+zone 216.26.10.in-addr.arpa/IN: loaded serial 2026100801
+OK
+
+### Forward lookups
+--- ozy.cns NS
+ns1.ozy.cns.
+ns2.ozy.cns.
+--- eng.ozy.cns NS
+ns2.eng.ozy.cns.
+ns1.eng.ozy.cns.
+--- vic.cns NS
+ns1.vic.cns.
+ns2.vic.cns.
+--- sqlmst.ozy.cns
+10.26.216.236
+--- sqlslv1.vic.cns
+10.26.216.144
+--- sqlslv2.vic.cns
+10.26.216.150
+--- www.eng.ozy.cns
+10.26.216.236
+
+### Reverse lookups
+ozy.cns.
+mail.ozy.cns.
+vic.cns.
+mail.vic.cns.
+sqlslv2.vic.cns.
