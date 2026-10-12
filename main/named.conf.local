@@ -2,8 +2,8 @@
 zone "." {
     type master;
     file "/etc/bind/db.root";
-    allow-transfer { 192.168.100.29; };
-    also-notify { 192.168.100.29; };
+    allow-transfer { 172.29.169.144; };
+    also-notify { 172.29.169.144; };
     notify yes;
 };
 
@@ -11,41 +11,41 @@ zone "." {
 zone "cns" {
     type master;
     file "/etc/bind/db.cns";
-    allow-transfer { 192.168.100.29; };
-    also-notify { 192.168.100.29; };
+    allow-transfer { 172.29.169.144; };
+    also-notify { 172.29.169.144; };
     notify yes;
 };
 
-// ===== Second-level zone: ozy.cns =====
+// ===== ozy.cns =====
 zone "ozy.cns" {
     type master;
     file "/etc/bind/db.ozy.cns";
-    allow-transfer { 192.168.100.29; };
-    also-notify { 192.168.100.29; };
+    allow-transfer { 172.29.169.144; };
+    also-notify { 172.29.169.144; };
     notify yes;
 };
 
-// ===== Third-level zone: eng.ozy.cns =====
+// ===== eng.ozy.cns =====
 zone "eng.ozy.cns" {
     type master;
     file "/etc/bind/db.eng.ozy.cns";
-    allow-transfer { 192.168.100.29; };
-    also-notify { 192.168.100.29; };
+    allow-transfer { 172.29.169.144; };
+    also-notify { 172.29.169.144; };
     notify yes;
 };
 
-// ===== Reverse zone =====
-zone "100.168.192.in-addr.arpa" {
+// ===== Reverse =====
+zone "169.29.172.in-addr.arpa" {
     type master;
-    file "/etc/bind/db.192.168.100";
-    allow-transfer { 192.168.100.29; };
-    also-notify { 192.168.100.29; };
+    file "/etc/bind/db.172.29.169";
+    allow-transfer { 172.29.169.144; };
+    also-notify { 172.29.169.144; };
     notify yes;
 };
 
-// ===== Slave of vic.cns (from Clone) =====
+// ===== Slave of vic.cns =====
 zone "vic.cns" {
     type slave;
     file "/var/cache/bind/db.vic.cns";
-    masters { 192.168.100.29; };
+    masters { 172.29.169.144; };
 };

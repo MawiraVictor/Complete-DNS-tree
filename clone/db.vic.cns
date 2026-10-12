@@ -1,21 +1,22 @@
 $TTL 604800
 @       IN      SOA     ns1.vic.cns. admin.vic.cns. (
-                        2026100801 ; Serial
-                        604800     ; Refresh
-                        86400      ; Retry
-                        2419200    ; Expire
-                        604800 )   ; Negative Cache TTL
+                        2026101201
+                        604800
+                        86400
+                        2419200
+                        604800 )
 ;
 @       IN      NS      ns1.vic.cns.
 @       IN      NS      ns2.vic.cns.
-@       IN      A       192.168.100.29
+@       IN      A       172.29.169.144
 @       IN      MX  10  mail.vic.cns.
 
-ns1     IN      A       192.168.100.29
-ns2     IN      A       192.168.100.28
-mail    IN      A       192.168.100.29
-nfs     IN      A       192.168.100.29
-smb     IN      A       192.168.100.29
-ldap    IN      A       192.168.100.29
-www     IN      A       192.168.100.29
-sqlslv1 IN      A       192.168.100.29
+ns1     IN      A       172.29.169.144
+ns2     IN      A       172.29.169.236
+mail    IN      A       172.29.169.144
+nfs     IN      A       172.29.169.144
+smb     IN      A       172.29.169.144
+ldap    IN      A       172.29.169.144
+www     IN      A       172.29.169.144
+sqlslv1 IN      A       172.29.169.144
+sqlslv2 IN      A       172.29.169.150

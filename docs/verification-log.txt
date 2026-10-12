@@ -1,40 +1,14 @@
 === DNS Verification Log ===
-Generated: 2026-10-08T09:20:57-04:00
+Generated: 2026-10-12T07:20:00-04:00
 
 ### Zone validation
-zone ozy.cns/IN: loaded serial 2026100501
+zone ozy.cns/IN: loaded serial 2026101201
 OK
-zone eng.ozy.cns/IN: loaded serial 2026092701
+zone eng.ozy.cns/IN: loaded serial 2026101201
 OK
-zone cns/IN: loaded serial 2026092701
+zone cns/IN: loaded serial 2026101201
 OK
-zone ./IN: loaded serial 2026092701
+zone ./IN: loaded serial 2026101201
 OK
-zone 216.26.10.in-addr.arpa/IN: loaded serial 2026100801
-OK
-
-### Forward lookups
---- ozy.cns NS
-ns1.ozy.cns.
-ns2.ozy.cns.
---- eng.ozy.cns NS
-ns2.eng.ozy.cns.
-ns1.eng.ozy.cns.
---- vic.cns NS
-ns2.vic.cns.
-ns1.vic.cns.
---- sqlmst.ozy.cns
-10.26.216.236
---- sqlslv1.vic.cns
-10.26.216.144
---- sqlslv2.vic.cns
-10.26.216.150
---- www.eng.ozy.cns
-10.26.216.236
-
-### Reverse lookups
-ozy.cns.
-mail.ozy.cns.
-mail.vic.cns.
-vic.cns.
-sqlslv2.vic.cns.
+zone 216.26.10.in-addr.arpa/IN: loading from master file /etc/bind/db.10.26.216 failed: file not found
+zone 216.26.10.in-addr.arpa/IN: not loaded due to errors.

@@ -1,0 +1,16 @@
+$TTL 604800
+@       IN      SOA     vic.cns. root.vic.cns. (
+                        2026101201
+                        604800
+                        86400
+                        2419200
+                        604800 )
+;
+@       IN      NS      ns1.vic.cns.
+@       IN      NS      ns2.vic.cns.
+
+144     IN      PTR     mail.vic.cns.
+144     IN      PTR     vic.cns.
+236     IN      PTR     mail.ozy.cns.
+236     IN      PTR     ozy.cns.
+150     IN      PTR     sqlslv2.vic.cns.
