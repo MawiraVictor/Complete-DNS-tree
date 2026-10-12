@@ -4,16 +4,7 @@
 # DNS Tree Architecture
 
 ## Hierarchy
-. ROOT
-│
-└── cns TLD
-│
-├── ozy.cns
-│ └── eng.ozy.cns
-│
-└── vic.cns
-
-text
+<img width="247" height="97" alt="image" src="https://github.com/user-attachments/assets/4dcbe0c6-bc8e-4404-8d8c-d3e2f351e839" />
 
 ## Delegations
 
