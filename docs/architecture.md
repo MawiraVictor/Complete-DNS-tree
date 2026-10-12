@@ -1,3 +1,6 @@
+
+<img width="307" height="152" alt="image" src="https://github.com/user-attachments/assets/fe1aef2c-866d-4042-a141-c9ba2d6082b9" />
+
 # DNS Tree Architecture
 
 ## Hierarchy
